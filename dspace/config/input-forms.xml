@@ -14,15 +14,21 @@
  <!-- the mapping for handle "default".                                    -->
 
  <form-map>
-   <name-map collection-handle="default" form-name="traditional" />
+    <name-map collection-handle="default" form-name="traditional" />
  </form-map>
  <form-map>
-	 <name-map collection-handle="2451/61976" form-name="Calabash" />
+    <name-map collection-handle="2451/61976" form-name="Calabash" />
  </form-map>
  <form-map>
     <name-map collection-handle="2451/60387" form-name="Tandon" />
  </form-map>
- <form-map>
+<form-map>
+   <name-map collection-handle="/123456789/61251" form-name="Tandon-capstone" />
+</form-map>
+<form-map>
+   <name-map collection-handle="123456789/61252" form-name="Tandon-capstone" />
+</form-map>
+<form-map>
    <name-map collection-handle="2451/37860" form-name="Laefer" />
  </form-map>
  <form-map>
@@ -897,6 +903,131 @@ it, please enter the types and the actual numbers or codes below.</hint>
        </field>
      </page>
    </form>
+
+<form name="Tandon-capstone">
+<page number="1">
+	
+
+<field>
+	<dc-schema>dc</dc-schema>
+	<dc-element>title</dc-element>
+	<dc-qualifier></dc-qualifier>
+		<repeatable>false</repeatable>
+		<label>Title</label>
+		<input-type>onebox</input-type>
+		<hint>&lt;em class="submitFormHelpRequired"&gt;Enter the main title of the item. *Required*&lt;/em&gt;</hint>
+		<required>You must enter a main title for this item.</required>
+
+</field>
+
+
+<field>
+	<dc-schema>dc</dc-schema>
+	<dc-element>description</dc-element>
+	<dc-qualifier>abstract</dc-qualifier>
+		<repeatable>false</repeatable>
+		<label>Abstract</label>
+		<input-type>textarea</input-type>
+		<hint> Enter the abstract of the item below.</hint>
+		<required>You must enter a description for this item.</required>
+</field>
+
+
+<field>
+	<dc-schema>dc</dc-schema>
+	<dc-element>contributor</dc-element>
+	<dc-qualifier>author</dc-qualifier>
+		<repeatable>true</repeatable>
+		<label>Author</label>
+		<input-type>name</input-type>
+		<hint>&lt;em class="submitFormHelpRequired"&gt;Authors: first name; last name. *Required*&lt;/em&gt;</hint>
+		<required>You must add at least one author.</required>
+</field>
+
+
+<field>
+	<dc-schema>dc</dc-schema>
+	<dc-element>contributor</dc-element>
+	<dc-qualifier>advisor</dc-qualifier>
+		<repeatable>true</repeatable>
+		<label>Capstone Professor</label>
+		<input-type>name</input-type>
+		<hint>&lt;em class="submitFormHelpRequired"&gt;Authors: first name; last name. *Required*&lt;/em&gt;</hint>
+		<required>You must add the name of the capstone professor.</required>
+
+</field>
+
+
+
+
+<field>
+	<dc-schema>dc</dc-schema>
+	<dc-element>date</dc-element>
+	<dc-qualifier>issued</dc-qualifier>
+		<repeatable>false</repeatable>
+		<label>Degree Year</label>
+		<input-type>date</input-type>
+		<hint>&lt;em class="submitFormHelpRequired"&gt;You must add a date of publication.  *Required*&lt;/em&gt;</hint>
+		<required>You must enter the year when the capstone project was completed.</required>
+</field>
+
+
+
+<field>
+
+	<dc-schema>dc</dc-schema>
+	<dc-element>language</dc-element>
+	<dc-qualifier>iso</dc-qualifier>
+		<repeatable>false</repeatable>
+		<label>Language</label>
+		<input-type value-pairs-name="common_iso_languages">dropdown</input-type>
+		<hint>Select the language of the main content of the item. If the language does not appear in the list below, please select 'Other'.  If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
+		<required>You must enter a language.</required>
+</field>
+
+
+
+
+<field>
+	<dc-schema>dc</dc-schema>
+	<dc-element>type</dc-element>
+	<dc-qualifier></dc-qualifier>
+		<repeatable>true</repeatable>
+		<label>Type</label>
+		<input-type value-pairs-name="common_types">dropdown</input-type>
+		<hint> Select the type(s) of content you are submitting. To select more than one value in the list, you may have to hold down the "CTRL" or "Shift" key.</hint>
+		<required></required>
+</field>
+
+
+<field>
+	<dc-schema>dc</dc-schema>
+	<dc-element>format</dc-element>
+	<dc-qualifier>extent</dc-qualifier>
+		<repeatable>true</repeatable>
+		<label>Extent</label>
+		<input-type>one-box</input-type>
+		<hint> Enter the extent for the item, for example: 35 pages. </hint>
+		<required></required>
+</field>
+
+
+<field>
+	<dc-schema>dc</dc-schema>
+	<dc-element>format</dc-element>
+	<dc-qualifier>medium</dc-qualifier>
+		<repeatable>true</repeatable>
+		<label>Medium</label>
+		<input-type>one-box</input-type>
+		<hint> Enter the file format medium type for the item, for example: Adobe Portable Document Format (PDF).</hint>
+		<required></required>
+		<required></required>
+</field>
+    
+   </page>
+   </form>
+
+
    <form name="gallatin">
      <page number="1">
        <field>
@@ -5075,6 +5206,13 @@ it, please enter the types and the actual numbers or codes below.</hint>
        <stored-value>none</stored-value>
       </pair>
    </value-pairs>
+<value-pairs value-pairs-name="common_types" dc-term="type">
+<pair>
+<displayed-value>Capstone</displayed-value>
+<stored-value>Capstone</stored-value>
+</pair>
+ </value-pairs>
+ 
 </form-value-pairs>
 </input-forms>
 
