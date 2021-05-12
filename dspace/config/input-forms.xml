@@ -792,7 +792,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
                  <dc-qualifier>name</dc-qualifier>
                  <repeatable>false</repeatable>
                  <label>Degree</label>
-                 <input-type>name</input-type>
+                 <input-type>onebox</input-type>
                  <hint> Enter the name of the thesis degree related to the item submitted, for example: Doctor of Nursing Practice.</hint>
                  <required>You must enter a thesis degree name.</required>
              </field>
@@ -804,7 +804,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
                  <dc-qualifier>level</dc-qualifier>
                  <repeatable>false</repeatable>
                  <label>Degree level</label>
-                 <input-type>name</input-type>
+                 <input-type>onebox</input-type>
                  <hint> Enter the level of the thesis degree related to the item submitted, for example: Doctoral.</hint>
                  <required>You must enter a thesis degree level.</required>
              </field>
@@ -816,7 +816,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
                  <dc-qualifier>discipline</dc-qualifier>
                  <repeatable>false</repeatable>
                  <label>Discipline </label>
-                 <input-type>name</input-type>
+                 <input-type>onebox</input-type>
                  <hint> Enter the discipline related to the item submitted, for example: Nursing.</hint>
                  <required>You must enter a thesis degree discipline.</required>
              </field>
@@ -828,7 +828,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
                  <dc-qualifier>grantor</dc-qualifier>
                  <repeatable>false</repeatable>
                  <label>Degree granting institution</label>
-                 <input-type>name</input-type>
+                 <input-type>onebox</input-type>
                  <hint> Enter the degree granting institution related to the item submitted, for example: Rory Meyers College of Nursing, New York University.</hint>
                  <required>You must enter an institution.</required>
              </field>
@@ -905,7 +905,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
                  <dc-qualifier></dc-qualifier>
                  <repeatable>true</repeatable>
                  <label>Keyword</label>
-                 <input-type>one-box</input-type>
+                 <input-type>onebox</input-type>
                  <hint> Enter keyword subject terms. </hint>
                  <required></required>
              </field>
@@ -930,7 +930,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
                  <dc-qualifier>extent</dc-qualifier>
                  <repeatable>true</repeatable>
                  <label>Extent</label>
-                 <input-type>one-box</input-type>
+                 <input-type>onebox</input-type>
                  <hint> Enter the extent for the item, for example: 96 pages. </hint>
                  <required></required>
              </field>
@@ -942,7 +942,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
                  <dc-qualifier>medium</dc-qualifier>
                  <repeatable>true</repeatable>
                  <label>Medium</label>
-                 <input-type>one-box</input-type>
+                 <input-type>onebox</input-type>
                  <hint> Enter the file format medium type for the item, for example: Adobe Portable Document Format (PDF).</hint>
                  <required></required>
                  <required>You must enter a file format medium type.</required>
@@ -1249,7 +1249,7 @@ it, please enter the types and the actual numbers or codes below.</hint>
 	<dc-qualifier>extent</dc-qualifier>
 		<repeatable>true</repeatable>
 		<label>Extent</label>
-		<input-type>one-box</input-type>
+		<input-type>onebox</input-type>
 		<hint> Enter the extent for the item, for example: 35 pages. </hint>
 		<required></required>
 </field>
@@ -1261,9 +1261,8 @@ it, please enter the types and the actual numbers or codes below.</hint>
 	<dc-qualifier>medium</dc-qualifier>
 		<repeatable>true</repeatable>
 		<label>Medium</label>
-		<input-type>one-box</input-type>
+		<input-type>onebox</input-type>
 		<hint> Enter the file format medium type for the item, for example: Adobe Portable Document Format (PDF).</hint>
-		<required></required>
 		<required></required>
 </field>
     
